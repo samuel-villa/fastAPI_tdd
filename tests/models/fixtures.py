@@ -11,6 +11,6 @@ def db_inspector(db_session):
     """
     we don't need to import the 'db_session' because it's automatically
     created and available all over the test directory
-    (autouse=True in the mail fixtures.py)
+    (autouse=True in the main fixtures.py)
     """
     return inspect(db_session().bind)
